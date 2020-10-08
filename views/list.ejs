@@ -1,0 +1,34 @@
+
+
+<%- include("header") -%>
+
+  <div class="box" id="heading">
+    <h1><%=  kind %></h1>
+  </div>
+
+
+  <div class="box">
+<%  nlis .forEach(function(f){ %>
+  <form  action="/delete" method="post">
+
+  <div class="item">
+    <input type="checkbox"  name="cb" value="<%= f._id %>" onChange="this.form.submit()">
+    <p>    <%= f.name %> </p>
+  </div>
+
+</form>
+  <% })%>
+
+    <form class="item" action="/" method="post">
+      <input type="text" name="newitem" placeholder="New Item" autocomplete="off">
+      <button type="submit" name="button">+</button>
+    </form>
+
+  </div>
+
+<!--
+
+<a href="/about"><button type="button" name="button" >About</button></a> -->
+
+
+<%- include("footer") -%>

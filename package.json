@@ -1,0 +1,24 @@
+{
+  "name": "tdl",
+  "version": "1.0.0",
+  "homepage": "http://ManiRatnaReddy-Bellamkonda.github.io/tdl",
+  "description": "tdl",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "",
+  "engines": {
+    "node": "12.18.3"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "gh-pages": "^3.1.0",
+    "mongoose": "^5.10.7"
+  }
+}
